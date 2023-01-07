@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+body{
+    background-color: black;
+}
+
+
+.navbar{
+    background-color: black;
+}
+.content{
+    background-color: black;
+}
+
+
+
+footer {
+    margin-top: 0px;
+    font-family: Verdana;
+    background-color: black;
+}
+.foot{
+    padding: 40px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.about_us {
+    text-align: center;
+    font-size: 6vmin;
+    font-weight: 500;
+    color: white;
+    
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: chartreuse;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.line1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.connect{
+    width: 50%;
+    margin-bottom: 30px;
+}
+.icons{
+    justify-content: center;
+    padding: 20px;
+}
+#insta,#facebook,#linkedin,#youtube{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(85, 80, 80);
+}
+#insta:hover{
+    color: #E1306C;
+}
+#facebook:hover{
+    color: #1606a8;
+}
+#linkedin:hover{
+    color: #0077B5;
+}
+#youtube:hover{
+    color: red;
+}
+

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  
+  <meta property="og:title" content="Codechef CMRTC APP">
+  <meta property="og:site_name" content="Codechefapp CMRTC">
+  <meta property="og:url" content="https://codechefcmrtc.tech">
+  <meta property="og:description" content="College Chapters help students become better problem solvers by fostering learning and professional development. We believe every student should be given the proper mentorship and resources to become ">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://codechefcmrtc.tech/assets/logo.jpg">
+<meta name="keywords" content="cmrtc, cmrtechnicalcampus , codechef, codechefcmrtc, hyderabad">  
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script
+  type="text/javascript"
+  src="https://app.termly.io/embed.min.js"
+  data-auto-block="on"
+  data-website-uuid="23dc5073-dd47-4979-aef1-37bd96dc2a3f"
+  ></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "f2acb6ec-1ae4-462c-9305-ee325126181e",
+    });
+  });
+</script>
+  <base href="/">
+<style>
+  #loader {
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+  }
+  
+  #loader {
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+  }
+  
+  #loader .dot {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 87.5px;
+  }
+  
+  #loader .dot::before {
+    border-radius: 100%;
+    content: "";
+    height: 87.5px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0);
+    width: 87.5px;
+  }
+  
+  #loader .dot:nth-child(7n+1) {
+    transform: rotate(45deg);
+  }
+  
+  #loader .dot:nth-child(7n+1)::before {
+    animation: 0.8s linear 0.1s normal none infinite running load;
+    background: #00ff80 none repeat scroll 0 0;
+  }
+  
+  #loader .dot:nth-child(7n+2) {
+    transform: rotate(90deg);
+  }
+  
+  #loader .dot:nth-child(7n+2)::before {
+    animation: 0.8s linear 0.2s normal none infinite running load;
+    background: #00ffea none repeat scroll 0 0;
+  }
+  
+  #loader .dot:nth-child(7n+3) {
+    transform: rotate(135deg);
+  }
+  
+  #loader .dot:nth-child(7n+3)::before {
+    animation: 0.8s linear 0.3s normal none infinite running load;
+    background: #00aaff none repeat scroll 0 0;
+  }
+  
+  #loader .dot:nth-child(7n+4) {
+    transform: rotate(180deg);
+  }
+  
+  #loader .dot:nth-child(7n+4)::before {
+    animation: 0.8s linear 0.4s normal none infinite running load;
+    background: #0040ff none repeat scroll 0 0;
+  }
+  
+  #loader .dot:nth-child(7n+5) {
+    transform: rotate(225deg);
+  }
+  
+  #loader .dot:nth-child(7n+5)::before {
+    animation: 0.8s linear 0.5s normal none infinite running load;
+    background: #2a00ff none repeat scroll 0 0;
+  }
+  
+  #loader .dot:nth-child(7n+6) {
+    transform: rotate(270deg);
+  }
+  
+  #loader .dot:nth-child(7n+6)::before {
+    animation: 0.8s linear 0.6s normal none infinite running load;
+    background: #9500ff none repeat scroll 0 0;
+  }
+  
+  #loader .dot:nth-child(7n+7) {
+    transform: rotate(315deg);
+  }
+  
+  #loader .dot:nth-child(7n+7)::before {
+    animation: 0.8s linear 0.7s normal none infinite running load;
+    background: magenta none repeat scroll 0 0;
+  }
+  
+  #loader .dot:nth-child(7n+8) {
+    transform: rotate(360deg);
+  }
+  
+  #loader .dot:nth-child(7n+8)::before {
+    animation: 0.8s linear 0.8s normal none infinite running load;
+    background: #ff0095 none repeat scroll 0 0;
+  }
+  
+  #loader .loading {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    bottom: -40px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 180px;
+  }
+  
+  @keyframes load {
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes load {
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+  
+  .spinner-message {
+    text-align: center;
+  }</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JLE8QT6CW7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JLE8QT6CW7', {send_page_view: false});
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="mat-typography">
+  <app-root>
+
+    <div class="container">
+      <div class="row">
+        <div id="loader">
+            <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="loading"></div>
+        </div>
+      </div>
+    </div>
+  </app-root>
+</body>
+</html>

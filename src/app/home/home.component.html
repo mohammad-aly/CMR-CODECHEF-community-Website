@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+body ::-webkit-scrollbar-track{
+    background-color: black;
+}
+body {
+    background-color: black;
+    overflow: hidden;
+}
+a{
+   text-decoration: none;
+}
+
+/* Header section Starts*/
+
+header {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    background-image: url('assets/bg31.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end; /*reminder*/
+    justify-content: center;
+}
+
+.header_content {
+    margin-bottom: 150px;
+    color: white;
+    text-align: center;
+}
+
+.header_content .descriptive-1{
+    font-size: 3vmin;
+    font-weight: 400;
+    color: rgb(201, 201, 201);
+
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: chartreuse;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.line6{
+    width: 150px;
+    height: 4px;
+    background-color: chartreuse;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header_content .imp{
+    display: flex;
+    font-size: 45px;
+    font-weight: 800;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    padding: 10px 15px;
+    background-color: chartreuse;
+    color: rgb(10, 10, 10);
+    border-radius: 30px;
+}
+.btn3{
+    float: right;
+    padding: 10px 15px;
+    background-color: chartreuse;
+    color: rgb(10, 10, 10);
+    border-radius: 30px;
+}
+
+.btn:hover{
+    background-color: rgb(219, 226, 225);
+    box-shadow: 1px 2px 18px 1px #585857, 0 17px 50px 0 #333333;
+}
+.btn3:hover{
+    background-color: rgb(219, 226, 225);
+    box-shadow: 1px 2px 18px 1px #585857, 0 17px 50px 0 #333333;
+}
+.anim-image{
+    animation: animate 5s infinite ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+      transform: rotateY(0deg);
+    }
+
+    50% {
+      transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+  }
+
+
+/* Header Sec ends */
+
+
+/* About starts*/
+
+section {
+    width: 70%;
+    margin: 80px auto;
+}
+
+.about_us {
+    text-align: center;
+    font-size: 5vmin;
+    font-weight: 500;
+    color: white;
+
+}
+
+.up_desc{
+    color: white;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5vmin;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* About Ends*/
+
+
+/*footer*/
+footer {
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.foot{
+    padding: 40px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.about_us {
+    text-align: center;
+    font-size: 6vmin;
+    font-weight: 500;
+    color: white;
+
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: chartreuse;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.line1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.connect{
+    width: 50%;
+    margin-bottom: 30px;
+}
+.icons{
+    justify-content: center;
+    padding: 20px;
+}
+#insta,#facebook,#linkedin,#youtube{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(85, 80, 80);
+}
+#insta:hover{
+    color: #E1306C;
+}
+#facebook:hover{
+    color: #1606a8;
+}
+#linkedin:hover{
+    color: #0077B5;
+}
+#youtube:hover{
+    color: red;
+}
+
+/*footer ends*/
+
+
+/*cards*/
+.container{
+    margin-left: 100px;
+}
+.grid{
+    padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid > article{
+    background-color: black;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(87, 236, 73, 1.5);
+    /* rgba(0,0,0,0.3) */
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s;
+}
+.grid > article img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.grid > article:hover{
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(40, 223, 4, 1);
+}
+.text {
+    color: white;
+    padding: 0 20px 20px;
+
+}
+
+
+@media (max-width: 1110px) {
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .grid > article{
+        text-align: center;
+    }
+    .container{
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 660px) {
+    .grid > article{
+        width: 300px;
+        transition: transform 0.3s;
+    }
+}
+@media (max-width: 632px) {
+    .grid > article{
+        width: 270px;
+        transition: transform 0.3s;
+    }
+}
+@media (max-width: 590px) {
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .grid > article{
+        text-align: center;
+    }
+    .container{
+        margin-left: 25px;
+    }
+    .grid > article{
+        width: 350px;
+        transition: transform 0.3s;
+    }
+}
+@media (max-width: 418px) {
+    .grid > article{
+        width: 270px;
+        transition: transform 0.3s;
+    }
+}
+@media (max-width: 380px) {
+    .grid > article{
+        width: 270px;
+        transition: transform 0.3s;
+    }
+}
+@media (max-width: 340px) {
+    .grid > article{
+        width: 220px;
+        transition: transform 0.3s;
+    }
+}
+@media (max-width: 300px) {
+    .grid > article{
+        width: 180px;
+        transition: transform 0.3s;
+    }
+    .icons i{
+        width: 10px;
+    }
+}
+
+/*cards*/
+
+.cnt {
+    font: 800 40px system-ui;
+  }
+
+/*sticky starts*/
+
+.sticky{
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-250px, 0);
+}
+
+.sticky a{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    padding: 20px;
+    width: 300px;
+    text-align: right;
+    border-radius: 50px;
+    transition: 1s;
+    transition-property: transform;
+
+}
+
+.sticky a:hover{
+    transform: translate(140px, 0);
+
+}
+
+.sticky i{
+    margin-left: 10px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.sticky a:nth-child(1) i{
+    color: #E1306C;
+}
+.sticky a:nth-child(2) i{
+    color: #F80000;
+}
+
+/*sticky ends*/
+
+/*typing*/
+
+.who {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 6vmin;
+    font-weight: 500;
+    color: white;
+
+}
+.we .type_head{
+    margin-top: 1px;
+    text-align: center;
+    font-size: 7vmin;
+    font-weight: 800;
+    color: white;
+
+}
+
+#small {
+    color: grey;
+    text-align: center;
+     font-size: 3vmin;
+     font-weight: 300;
+     margin-top: 90px;
+     margin-bottom:0%;
+}
+
+.type{
+    margin-bottom: 150px;
+
+}
+
+ .weare{
+   margin-top: 20px;
+   color: #fff;
+   font-size: 30px;
+   text-align: center;
+   justify-content: center;
+   font-size: 8vmin;
+   font-weight: 800;
+   margin-top: 25px;
+   margin-bottom: 30px;
+
+ }
+ .main{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .main .option{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+
+  .option li{
+    list-style-type: none;
+    color: rgba(40, 223, 4, 1);
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0%;
+    animation: slide 12s steps(4) infinite;
+  }
+
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  /* .option li span{
+     position: relative;
+     margin: 5px 0;
+     line-height: 90px;
+  } */
+
+  .option li span:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-left: 2px solid rgba(40, 223, 4, 1);
+    animation: typing 3s steps(10) infinite;
+  }
+
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px)
+    }
+    100%{
+      left: 0;
+    }
+  }
+  @media (max-width: 372px) {
+    .option li{
+        font-size: 40px;
+        font-weight: 500;
+      }
+}
+
+
+  /*typing*/
+.row{
+    /*background-color: rgb(43, 43, 43);*/
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+
+</style>
+<body>
+
+    <!-- Sticky starts -->
+
+    <div class="sticky">
+        <a href="https://www.instagram.com/codechef_cmrtc_chapter/">Instagram<i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCJfu4MvWEq0e4z-cz1VcLDw">YouTube<i class="fa fa-youtube"></i></a>
+    </div>
+
+    <!-- sticly ends -->
+
+   <!-- header section starts -->
+   <header>
+
+       <div class="header_content">
+           <img class="anim-image" src="assets/logo.png" style="width:200px">
+           <p class="descriptive-1">COMPETITIVE CODING ZONE</p>
+           <div class="line"></div>
+           <p class="imp">CODECHEF CMRTC CHAPTER</p>
+           <a routerLink="/joinclub" class="btn">JOIN  CLUB </a>
+           <a routerLink="/joinclub" class="btn3"> Hackathon </a>
+       </div>
+
+   </header>
+   <!-- header section ends -->
+
+    <!-- countUp starts -->
+    <div class="card">
+        <div class="  card-header" >
+            <b>
+                <p style="text-align: center;font-size: large; font-style: normal;">Current community members count </p>
+            </b>
+        </div>
+
+        <div class="row card-body">
+            <h1 [countUp]="getval()" style="text-align: center;" >0</h1>
+        </div>
+    </div>
+    <!-- countUp ends -->
+
+
+    <!-- who we are -->
+    <!-- <h2 class="who">We Believe In</h2>
+            <div class="line"></div> -->
+            <div class="we">
+        <p id="small">CodeChef-CMRTC believes in the notion of learning by doing</p>
+        <p class="type_head">At CodeChef-CMRTC we believe in</p>
+    </div>
+    <div class="type">
+        <div class="main">
+        <ul class="option">
+        <li><span>Learning</span></li>
+        <li><span>Developing</span></li>
+        <li><span>Sharing</span></li>
+        <li><span>Influencing</span></li>
+        </ul>
+        </div>
+    </div>
+
+    <!-- who we are -->
+
+
+   <!-- About -->
+
+       <section>
+
+           <h2 class="about_us">About Us</h2>
+           <div class="line"></div>
+
+           <div class="up_desc">
+               <p>Our primary intention is to promote all - round development of students through interactive sessions, events, workshops and projects that help them percieve real-world problems. We strive hard to educate and guide our members by equpping them with technical and management skills, thereby enabling them to make significant contributions towards the community.</p>
+           </div>
+
+       </section>
+
+   <!-- About -->
+
+
+   <!-- Team -->
+
+
+   <h2 class="about_us" id="Team">Our Team</h2>
+   <div class="line"></div>
+
+
+   <div class="container">
+       <main class="grid">
+
+        <article>
+            <img src="assets/faculty.png" alt="">
+            <div class="text">
+                <h2>Dr. K. Srujan Raju</h2>
+                <div class="line6"></div>
+                <p style="color: chartreuse;; font-size: 15px;">Faculty Advisor</p>
+
+                <div class="icons">
+
+                    <a id="insta" href="https://www.instagram.com/p/Bg5wmX5FZTw/">
+                        <i class="fa fa-instagram" aria-hidden="true" style="font-size:25px"></i>
+                    </a>
+                    <a id="facebook" href="https://www.facebook.com/raju.srujan.7">
+                        <i class="fa fa-facebook" aria-hidden="true" style="font-size:25px"></i>
+                    </a>
+                    <a id="linkedin" href="https://www.linkedin.com/in/dr-k-srujan-raju-89b11025/">
+                        <i class="fa fa-linkedin" aria-hidden="true" style="font-size:25px"></i>
+                    </a>
+
+                </div>
+            </div>
+        </article>
+           <article class="grid1">
+               <img src="assets/abhilash.jpeg" alt="">
+               <div class="text">
+                   <h2>MOVVA ABHILASH</h2>
+                   <div class="line6"></div>
+                   <p style="color: chartreuse; font-size: 15px;">President</p>
+
+                   <div class="icons">
+
+                       <a id="insta" href="https://www.instagram.com/abhilash_movva/">
+                           <i class="fa fa-instagram" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+                       <a id="facebook" href="https://www.facebook.com/AbhilashMovva">
+                           <i class="fa fa-facebook" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+                       <a id="linkedin" href="https://www.linkedin.com/in/abhilash-movva-b979791a1/">
+                           <i class="fa fa-linkedin" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+
+                   </div>
+               </div>
+           </article>
+
+           <article>
+               <img src="assets/charan.jpeg" alt="">
+               <div class="text">
+                   <h2>CHARAN NARUKULLA</h2>
+                   <div class="line6"></div>
+                   <p style="color: chartreuse;; font-size: 15px;">Competitive Programming Lead & Backend Developer </p>
+
+                   <div class="icons">
+
+                       <a id="insta" href="https://www.instagram.com/charanchowdaryn/">
+                           <i class="fa fa-instagram" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+                       <a id="facebook" aria-disabled="true" title="User is not using this platform">
+                           <i class="fa fa-facebook" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+                       <a id="linkedin" href="https://www.linkedin.com/in/charan-narukulla-850695188/">
+                           <i class="fa fa-linkedin" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+
+                   </div>
+               </div>
+           </article>
+
+           <article>
+               <img src="assets/sourabh.jpeg" alt="">
+               <div class="text">
+                   <h2>SOURABH MAHINDRAKAR</h2>
+                   <div class="line6"></div>
+                   <p style="color: chartreuse;; font-size: 15px;">Outreach and Media Lead </p>
+
+                   <div class="icons">
+
+                       <a id="insta" href="https://www.instagram.com/mahindrakarsourabh/">
+                           <i class="fa fa-instagram" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+                       <a id="facebook"  aria-disabled="true" title="User is not using this platform">
+                           <i class="fa fa-facebook" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+                       <a id="linkedin" href=" https://www.linkedin.com/in/sourabh-mahindrakar-7459541b0/">
+                           <i class="fa fa-linkedin" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+
+                   </div>
+               </div>
+           </article>
+
+           <article>
+               <img src="assets/riyaz.jpeg" alt="">
+               <div class="text">
+                   <h2>MOHAMMAD RIYAZ</h2>
+                   <div class="line6"></div>
+                   <p style="color: chartreuse;; font-size: 15px;">Front End Developer</p>
+
+                   <div class="icons">
+
+                       <a id="insta" href="https://www.instagram.com/iam_mohammadaly/">
+                           <i class="fa fa-instagram" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+                       <a id="facebook" href="https://www.facebook.com/mohammadriyazriyaz.mohammad">
+                           <i class="fa fa-facebook" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+                       <a id="linkedin" href="https://www.linkedin.com/in/mohammad-riyaz-16358b1aa">
+                           <i class="fa fa-linkedin" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+
+                   </div>
+               </div>
+           </article>
+
+           <article>
+               <img src="assets/name.jpeg" alt="">
+               <div class="text">
+                   <h2>MANAV PATEL</h2>
+                   <div class="line6"></div>
+                   <p style="color: chartreuse;; font-size: 15px;">Events Lead</p>
+
+                   <div class="icons">
+
+                       <a id="insta" href="https://www.instagram.com/manav_.patel/.">
+                           <i class="fa fa-instagram" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+                       <a id="facebook" href="https://www.facebook.com/profile.php?id=100014257997607">
+                           <i class="fa fa-facebook" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+                       <a id="linkedin" href="https://www.linkedin.com/in/manav-patel-3964b41ba/">
+                           <i class="fa fa-linkedin" aria-hidden="true" style="font-size:25px"></i>
+                       </a>
+
+                   </div>
+               </div>
+           </article>
+       </main>
+   </div>
+
+</body>
+</html>
+   <!-- Team ends -->
+
+
+
+
+
+

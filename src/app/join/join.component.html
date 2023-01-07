@@ -1,0 +1,140 @@
+<script>
+    function validateForm() {
+        var gname = document.forms["myForm"]["gname"].value;
+        var sname = document.forms["myForm"]["sname"].value;
+        var mobile = document.forms["myForm"]["mobile"].value;
+        var ccuser = document.forms["myForm"]["ccuser"].value;
+        var rollno = document.forms["myForm"]["rollno"].value;
+        var year = document.forms["myForm"]["year"].value;
+        var branch = document.forms["myForm"]["branch"].value;
+        var sec = document.forms["myForm"]["sec"].value;
+
+        var b=0;
+        var c=0;
+        for(i=0;i<gname.length;i++)
+        {
+            if('A' <= gname[i] && gname[i] <= 'Z') 
+                b++;
+            if('a' <= gname[i] && gname[i] <= 'z') 
+                c++;
+        }
+
+        var s=0;
+        var g=0;
+        for(i=0;i<sname.length;i++)
+        {
+            if('A' <= sname[i] && sname[i] <= 'Z')
+                s++;
+            if('a' <= sname[i] && sname[i] <= 'z')
+                g++;
+        }
+
+
+        if ((gname == "") ||(sname=="") || (mobile=="")||(ccuser=="")||(rollno==""))
+        {
+            alert(" please fill all the fields ");
+            return false;
+        }else if(rollno.length!=10){  
+            alert("input the correct Roll Number");  
+            return false;  
+        }else if(mobile.length!=10){  
+            alert("input the 10 digits mobile number");  
+            return false;  
+        }else if(c+b<=2){
+            alert("Minimum 3 letters should be present in the [GIVEN NAME] field");
+            return false;
+        }else if(s+g<=2){
+            alert("Minimum 3 letters should be present in the [SURNAME] field");
+            return false;
+        }
+        else
+        {
+            alert("Thank you for your registration");
+        }
+    }
+</script>
+
+<div class="container  mt-5 pb-5 id="  >
+    <div class="topSec">
+        <div style="text-align: center;">CODECHEF - CMRTC CHAPTER</div>
+        <div class="line"></div>
+    </div>
+
+    <h2 style="color: white; text-align: center; font-size:30px; font-weight: 500">Community Member Registration Form</h2>
+    <hr style="background-color: white;">
+    <br>
+   
+ 
+    <!-- Form -->
+
+        <form #user="ngForm"  (ngSubmit)="onSubmit(user.value)" >
+            <div class="form-group">
+                <label> Given name:</label>
+                <input type="text" class="form-control" id="gname" name="gname" required="true" ngModel>
+            </div>
+<br>
+            <div class="form-group">
+                <label>Surname:</label>
+                <input type="text" class="form-control" id="sname" name="sname" required="true" ngModel>
+            </div>
+<br>
+            <div class="form-group">
+                <label>Mobile number:</label>
+                <input type="tel" class="form-control" id="mobile" name="mobile" required="true" ngModel>
+            </div>
+<br>
+            <div class="form-group">
+                <label>Codechef username:</label>
+                <input type="text" class="form-control" id="ccuser" name="ccuser" required="true" ngModel>
+            </div>
+<br>
+            <div class="form-group">
+                <label>Roll number:</label>
+                <input type="text" class="form-control" id="rollno" name="rollno" required="true" ngModel>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label>Year:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select #y="ngModel" id="Year" (change)="gotyear(y.value)" name="Year" class="form-control" required ngModel>
+                    <option *ngFor="let v of yearlist" value="{{v}}">
+                        {{v}}
+                     </option>
+                    
+                </select>   
+            </div>
+ 
+            <br>
+
+            <div class="form-group">
+                <label>Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select #y="ngModel" id="branch"   name="branch" class="form-control" required ngModel>
+                    <option *ngFor="let v of branchlist" value="{{v}}">
+                        {{v}}
+                     </option>
+                    
+                </select>   
+            </div>
+            
+            <br>
+
+            <div class="form-group">
+                <label>Section: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select #y="ngModel" id="sec"   name="sec" class="form-control" required ngModel>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>   
+            </div>
+            <br>
+             
+         <div class="text-center" >   <input type="submit" class="btn" style="background: chartreuse">
+         </div>
+        
+        
+        </form>
+
+    </div>
+    
